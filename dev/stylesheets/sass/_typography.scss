@@ -1,0 +1,17 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800';
+
+body{
+   font-family: 'Open Sans', sans-serif;
+   font-weight: normal;
+   color: $textgray;
+   font-size: 13px;
+}
+
+h1{
+   color: $headlinetext;
+   font-size: 32px;
+}
+
+h2{
+   font-size: 18px;
+}

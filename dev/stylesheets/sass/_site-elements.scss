@@ -1,0 +1,45 @@
+body{
+   background: $mainbg;
+}
+
+.clear{
+   clear: both;
+}
+
+.main-container{
+   width: 94%;
+   max-width: 1115px;
+   margin: 0 auto;
+   display: table;
+}
+
+// ***************************************************************
+// header
+// ***************************************************************
+header#masthead{
+   width: 100%;
+   background: $darkergray;
+   height: 150px;
+}
+
+#header-top{
+   height: 90px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   a{
+      .logo-cont{
+         width: 251px;
+         height: 33px;
+         background-image: url(img/kodak-logo-head.svg);
+         background-position: center;
+         background-repeat: no-repeat;
+      }
+   }
+   #info-panel{
+      width: 458px;
+      height: 35px;
+      background: $mainbg;
+   }
+}
