@@ -132,6 +132,11 @@ require get_template_directory().'/inc/custom-header.php';
 require get_template_directory().'/inc/template-tags.php';
 
 /**
+ * zurb navigation walker.
+ */
+require get_template_directory().'/inc/zurb-menu-walkers.php';
+
+/**
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory().'/inc/extras.php';
@@ -145,3 +150,8 @@ require get_template_directory().'/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory().'/inc/jetpack.php';
+
+/**
+ * woocommerce functions.
+ */
+require get_template_directory().'/inc/woocommerce.php';
