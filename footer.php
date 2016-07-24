@@ -17,13 +17,23 @@
 			<?php printf(esc_html__('Theme: %1$s by %2$s.', 'speed1b'), 'speed1b', '<a href="http://underscores.me/" rel="designer">Istvan Anda</a>'); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
+
+   <!-- **********  off canvas  *************-->
+         </div><!-- off-canvas-content -->
+      </div><!-- off-canvas-wrapper-inner -->
+   </div><!-- off-canvas-wrapper -->
+   <!-- **********  off canvas  *************-->
+
 </div><!-- #page -->
 
-<?php wp_footer(); ?>
 
+
+<?php wp_footer(); ?>
 <script type="text/javascript">
    $(document).foundation();
 </script>
 
 </body>
+
+
 </html>

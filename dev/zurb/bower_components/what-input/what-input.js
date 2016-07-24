@@ -1,4 +1,4 @@
-module.exports = (function() {
+window.whatInput = (function() {
 
   'use strict';
 
@@ -92,7 +92,7 @@ module.exports = (function() {
   */
 
   // allows events that are also triggered to be filtered out for `touchstart`
-  function eventBuffer(event) {
+  function eventBuffer() {
     clearTimer();
     setInput(event);
 
@@ -104,6 +104,11 @@ module.exports = (function() {
 
   function bufferedEvent(event) {
     if (!buffer) setInput(event);
+  }
+
+  function unBufferedEvent(event) {
+    clearTimer();
+    setInput(event);
   }
 
   function clearTimer() {
@@ -207,8 +212,8 @@ module.exports = (function() {
     body.addEventListener(mouseWheel, bufferedEvent);
 
     // keyboard events
-    body.addEventListener('keydown', eventBuffer);
-    body.addEventListener('keyup', eventBuffer);
+    body.addEventListener('keydown', unBufferedEvent);
+    body.addEventListener('keyup', unBufferedEvent);
     document.addEventListener('keyup', unLogKeys);
   }
 

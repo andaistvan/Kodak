@@ -1,5 +1,5 @@
 body{
-   background: $mainbg;
+   background: black;
 }
 
 .clear{
@@ -14,11 +14,24 @@ body{
 }
 
 // ***************************************************************
+// off canvas
+// ***************************************************************
+.off-canvas-content{
+   background: $mainbg;
+}
+
+.off-canvas position-left{
+   width: 500px;
+}
+
+
+// ***************************************************************
 // header
 // ***************************************************************
 header#masthead{
    width: 100%;
    background: $darkergray;
+   box-shadow: 0px 0px 31px 0px rgba(0,0,0,0.51);
    height: 150px;
 }
 

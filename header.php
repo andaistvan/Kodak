@@ -18,10 +18,30 @@
 </head>
 
 <body <?php body_class(); ?>>
+
 <div id="page" class="site">
+
+   <!-- **********  off canvas  *************-->
+
+   <div class="off-canvas-wrapper">
+       <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+         <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+            <h1>lófasz</h1>
+         </div>
+         <div class="off-canvas-content" data-off-canvas-content>
+
+   <!-- **********  off canvas  *************-->
+
+
 	<!-- <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'speed1b'); ?></a> -->
 
+
 	<header id="masthead" class="site-header" role="banner">
+
+
+
+
+
 		<div id="header-top" class="main-container">
 
          <!-- logo -->
@@ -30,22 +50,38 @@
          </a>
          <!-- logo -->
 
+          <button type="button" class="button" data-toggle="offCanvas">Open Menu</button><!-- off canvas toggle -->
+
          <!-- search, login, contact  -->
          <div id="info-panel">
-            
+
          </div>
          <!-- search, login, contact  -->
 
 		</div><!-- header-top -->
 
-      <div id="header-bottom">
-         <nav id="site-navigation" class="main-navigation" role="navigation">
-   			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e('Primary Menu', 'speed1b'); ?></button>
-   			<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
-   		</nav><!-- #site-navigation -->
-      </div>
-
-
+      <div id="header-bottom" class="main-container">
+         <!-- #site-navigation -->
+         <?php
+         echo'
+            <div id="main-nav">
+                <div class="top-bar-left">';
+                    wp_nav_menu(array(
+                        'container' => false,
+                        'menu' => __('Top Bar Menu', 'speed1b'),
+                        'menu_class' => 'dropdown menu',
+                        'theme_location' => 'topbar-menu',
+                        'items_wrap' => '<ul id="%1$s" class="%2$s" data-dropdown-menu>%3$s</ul>',
+                        //Recommend setting this to false, but if you need a fallback...
+                        'fallback_cb' => 'f6_topbar_menu_fallback',
+                        'walker' => new F6_TOPBAR_MENU_WALKER(),
+                    ));
+                echo'
+                </div>
+            </div>';
+         ?>
+         <!-- #site-navigation -->
+      </div><!-- #header-bottom -->
 
 
 	</header><!-- #masthead -->
