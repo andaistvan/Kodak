@@ -19,8 +19,6 @@
 
 <body <?php body_class(); ?>>
 
-<div id="page" class="site">
-
    <!-- **********  off canvas  *************-->
 
    <div class="off-canvas-wrapper">
@@ -33,14 +31,12 @@
    <!-- **********  off canvas  *************-->
 
 
+<div id="page" class="site">
+
 	<!-- <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e('Skip to content', 'speed1b'); ?></a> -->
 
 
 	<header id="masthead" class="site-header" role="banner">
-
-
-
-
 
 		<div id="header-top" class="main-container">
 

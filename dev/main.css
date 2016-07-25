@@ -42,9 +42,50 @@ h1 {
 h2 {
   font-size: 18px; }
 
+h3 {
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  letter-spacing: 1px; }
+
 /*--------------------------------------------------------------
 # navigation
 --------------------------------------------------------------*/
+#main-nav .top-bar-left {
+  width: 100%; }
+  #main-nav .top-bar-left ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    #main-nav .top-bar-left ul li a {
+      color: #F8F8F9;
+      font-size: 14px;
+      text-transform: uppercase;
+      padding: 34px 4px 10px 4px; }
+    #main-nav .top-bar-left ul li:hover {
+      border-bottom: 2px solid #FF1E04;
+      transition: all 0.2s; }
+    #main-nav .top-bar-left ul li.current-menu-item {
+      border-bottom: 2px solid #FF1E04; }
+
+#footer-top div ul li {
+  display: block;
+  border-bottom: 1px solid #676767;
+  list-style: disc !important;
+  list-style-type: disc !important;
+  list-style-position: outside !important; }
+  #footer-top div ul li a {
+    font-size: 14px;
+    color: white;
+    padding: 8px 0; }
+  #footer-top div ul li a:hover {
+    color: #FF1E04;
+    transition: all 0.2s; }
+#footer-top div ul li.current-menu-item a {
+  color: #FF1E04; }
+#footer-top div ul li:last-child {
+  border-bottom: none; }
+
 /*--------------------------------------------------------------
 # site elements
 --------------------------------------------------------------*/
@@ -79,7 +120,7 @@ header#masthead {
   justify-content: space-between;
   align-items: center; }
   #header-top a .logo-cont {
-    width: 251px;
+    width: 201px;
     height: 33px;
     background-image: url(img/kodak-logo-head.svg);
     background-position: center;
@@ -88,6 +129,64 @@ header#masthead {
     width: 458px;
     height: 35px;
     background: #D1DBE1; }
+
+footer#site-footer {
+  background: #40474E;
+  min-height: 300px; }
+
+#footer-top {
+  padding: 50px 0 26px 0;
+  border-bottom: 2px solid #676767; }
+  #footer-top h3 {
+    padding-bottom: 21px; }
+  #footer-top p {
+    font-size: 14px;
+    color: white; }
+    #footer-top p a {
+      color: #FF1E04; }
+
+.footer-col {
+  width: 25%;
+  padding: 0 30px 0 0;
+  float: left; }
+
+@media (max-width: 800px) {
+  .footer-col {
+    width: 50%;
+    padding: 0 30px 0 30px; }
+
+  .footer-clear {
+    clear: both; }
+
+  .footer-padding30px {
+    padding: 40px 0 0 0; } }
+@media (max-width: 500px) {
+  .footer-col {
+    width: 90%;
+    padding: 0 30px 0 60px; }
+
+  .footer-padding-termekek {
+    padding-top: 30px; } }
+.footer-right-col-padding {
+  padding-top: 50px; }
+
+#footer-bottom #footer-logo-cont {
+  width: 201px;
+  height: 33px;
+  margin: 20px auto 20px auto;
+  background-image: url(img/kodak-logo-head.svg);
+  background-position: center;
+  background-repeat: no-repeat; }
+#footer-bottom p {
+  color: white;
+  font-size: 14px;
+  text-align: center; }
+  #footer-bottom p a {
+    font-size: 14px;
+    color: white; }
+  #footer-bottom p a:hover {
+    color: #FF1E04;
+    transition: all 0.2s; }
 
 /*--------------------------------------------------------------
 # widgets

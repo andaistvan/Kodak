@@ -65,6 +65,12 @@ function speed1b_setup()
 
     // * foundation menu - top-bar
     register_nav_menu('topbar-menu', __('Top Bar Menu', 'speed1b'));
+
+    // * footer menu - szolgaltatasok
+    register_nav_menu('footer-szolg-menu', __('Footer Szolg Menu', 'speed1b'));
+
+    // * footer menu - termékek
+    register_nav_menu('footer-termekek-menu', __('Footer Termekek Menu', 'speed1b'));
 }
 endif;
 add_action('after_setup_theme', 'speed1b_setup');

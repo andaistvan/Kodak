@@ -1,0 +1,68 @@
+// ***************************************************************
+// main navigation
+// ***************************************************************
+#main-nav{
+   .top-bar-left{
+      width: 100%;
+      ul{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         li{
+            a{
+               color: $navtext;
+               font-size: 14px;
+               text-transform: uppercase;
+               padding: 34px 4px 10px 4px;
+            }
+         }
+         li:hover{
+            border-bottom: 2px solid $mainred;
+            transition: all 0.2s;
+         }
+         li.current-menu-item{
+            border-bottom: 2px solid $mainred;
+         }
+      }
+   }
+}
+
+// ***************************************************************
+// off canvas navigation
+// ***************************************************************
+
+
+
+// ***************************************************************
+// footer navigation - szolgáltatásaink & termékek
+// ***************************************************************
+#footer-top{
+   div{
+      ul{
+         li{
+            display: block;
+            border-bottom: 1px solid #676767;
+            list-style: disc !important;
+            list-style-type: disc !important;
+            list-style-position: outside !important;
+            a{
+               font-size: 14px;
+               color: white;
+               padding: 8px 0;
+            }
+            a:hover{
+               color:$mainred;
+               transition: all 0.2s;
+            }
+         }
+         li.current-menu-item{
+            a{
+               color: $mainred;
+            }
+         }
+         li:last-child{
+            border-bottom: none;
+         }
+      }
+   }
+}
