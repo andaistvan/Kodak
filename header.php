@@ -25,6 +25,7 @@
        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
          <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
             <h1>lófasz</h1>
+            <?php dynamic_sidebar('offcanvas_widget'); ?>
          </div>
          <div class="off-canvas-content" data-off-canvas-content>
 

@@ -107,6 +107,48 @@ function speed1b_widgets_init()
 }
 add_action('widgets_init', 'speed1b_widgets_init');
 
+function speed1b_main_widget()
+{
+    register_sidebar(array(
+        'name' => esc_html__('main_widget', 'speed1b'),
+        'id' => 'main_widget',
+        'description' => esc_html__('Add widgets here.', 'speed1b'),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget' => '</section>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ));
+}
+add_action('widgets_init', 'speed1b_main_widget');
+
+function speed1b_offcanvas_widget()
+{
+    register_sidebar(array(
+        'name' => esc_html__('offcanvas_widget', 'speed1b'),
+        'id' => 'offcanvas_widget',
+        'description' => esc_html__('Add widgets here.', 'speed1b'),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget' => '</section>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ));
+}
+add_action('widgets_init', 'speed1b_offcanvas_widget');
+
+function speed1b_woosidebar_widget()
+{
+    register_sidebar(array(
+        'name' => esc_html__('woosidebar_widget', 'speed1b'),
+        'id' => 'woosidebar_widget',
+        'description' => esc_html__('Add widgets here.', 'speed1b'),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget' => '</section>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ));
+}
+add_action('widgets_init', 'speed1b_woosidebar_widget');
+
 /**
  * Enqueue scripts and styles.
  */

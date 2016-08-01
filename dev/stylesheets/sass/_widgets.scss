@@ -1,0 +1,67 @@
+// ***************************************************************
+// widget main style
+// ***************************************************************
+.widget{
+   background: #FFFFFF;
+   border: 1px solid #E5E5E5;
+   box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.16);
+   margin: 0 0 15px 0;
+}
+
+h2.widget-title{
+
+}
+
+section#nav_menu-3.widget.widget_nav_menu,
+section#nav_menu-5.widget.widget_nav_menu{
+   background-image: url(img/kodak-widgettop-logo.svg);
+   background-repeat: no-repeat;
+   background-position:top;
+   background-size: contain;
+   h2{
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      margin: 27% 0 9px 16px;
+      color: black;
+   }
+}
+
+ul#menu-araink-sidebar.menu,
+ul#menu-sidebar-bottom-menu.menu,
+ul#menu-woo-teszt.menu{
+   list-style-type: circle;
+   color: $mainred;
+   li{
+      display: block;
+      border-bottom: 1px solid #F4F4F4;
+      a{
+         font-size: 16px;
+         color: black;
+         line-height: 1.3em;
+      }
+      a:hover{
+         color: $mainred;
+         transition: all 0.2s;
+      }
+   }
+   li:first-child{
+      margin-top: 10px;
+   }
+   li:last-child{
+      border-bottom: none;
+      margin-bottom: 10px;
+   }
+}
+
+@media (max-width: 640px){
+   .widget{
+      padding: 0 40px;
+   }
+
+   section#nav_menu-3.widget.widget_nav_menu{
+      background-size: 300px auto;
+      // background-position: 16px 0;
+      background-position: top center;
+   }
+}
