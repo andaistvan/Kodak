@@ -223,13 +223,15 @@ section.contentbox-section {
   margin: 0 0 15px 0; }
 
 section#nav_menu-3.widget.widget_nav_menu,
-section#nav_menu-5.widget.widget_nav_menu {
+section#nav_menu-5.widget.widget_nav_menu,
+section#nav_menu-6.widget.widget_nav_menu {
   background-image: url(img/kodak-widgettop-logo.svg);
   background-repeat: no-repeat;
   background-position: top;
   background-size: contain; }
   section#nav_menu-3.widget.widget_nav_menu h2,
-  section#nav_menu-5.widget.widget_nav_menu h2 {
+  section#nav_menu-5.widget.widget_nav_menu h2,
+  section#nav_menu-6.widget.widget_nav_menu h2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: bold;
@@ -277,6 +279,21 @@ ul#menu-woo-teszt.menu {
 /*--------------------------------------------------------------
 # woostyles
 --------------------------------------------------------------*/
+.woo-container {
+  margin-top: 20px; }
+
+.woo-contentbox {
+  padding-top: 20px; }
+
+.woocommerce .woocommerce-breadcrumb {
+  color: white;
+  font-size: 16px; }
+  .woocommerce .woocommerce-breadcrumb a {
+    color: #D1DBE1; }
+  .woocommerce .woocommerce-breadcrumb a:hover {
+    color: #FF1E04;
+    transition: all 0.2s; }
+
 /*--------------------------------------------------------------
 # pages
 --------------------------------------------------------------*/
