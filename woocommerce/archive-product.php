@@ -86,7 +86,6 @@ get_header('shop'); ?>
 
          <!-- woocommerce sidebar -->
          <div class="medium-3 columns">
-
          	<?php dynamic_sidebar('woosidebar_widget'); ?>
          </div><!-- medium-3 columns -->
 

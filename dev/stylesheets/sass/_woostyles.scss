@@ -11,8 +11,31 @@
 .woocommerce .woocommerce-breadcrumb{
    color: white;
    font-size: 16px;
+   font-weight: bold;
    a{
       color: $mainbg;
+      font-weight: normal;
+   }
+   a:hover{
+      color: $mainred;
+      transition: all 0.2s;
+   }
+}
+
+
+// single product style
+.woo-single-container{
+   padding-top: 20px;
+}
+
+.woocommerce div.product .product_title{
+   color: black;
+}
+
+.product_meta{
+   a{
+      font-size: 14px;
+      color: $darkgray;
    }
    a:hover{
       color: $mainred;

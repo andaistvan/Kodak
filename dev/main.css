@@ -273,7 +273,9 @@ ul#menu-woo-teszt.menu {
   .widget {
     padding: 0 40px; }
 
-  section#nav_menu-3.widget.widget_nav_menu {
+  section#nav_menu-3.widget.widget_nav_menu,
+  section#nav_menu-5.widget.widget_nav_menu,
+  section#nav_menu-6.widget.widget_nav_menu {
     background-size: 300px auto;
     background-position: top center; } }
 /*--------------------------------------------------------------
@@ -287,12 +289,27 @@ ul#menu-woo-teszt.menu {
 
 .woocommerce .woocommerce-breadcrumb {
   color: white;
-  font-size: 16px; }
+  font-size: 16px;
+  font-weight: bold; }
   .woocommerce .woocommerce-breadcrumb a {
-    color: #D1DBE1; }
+    color: #D1DBE1;
+    font-weight: normal; }
   .woocommerce .woocommerce-breadcrumb a:hover {
     color: #FF1E04;
     transition: all 0.2s; }
+
+.woo-single-container {
+  padding-top: 20px; }
+
+.woocommerce div.product .product_title {
+  color: black; }
+
+.product_meta a {
+  font-size: 14px;
+  color: #40474E; }
+.product_meta a:hover {
+  color: #FF1E04;
+  transition: all 0.2s; }
 
 /*--------------------------------------------------------------
 # pages
