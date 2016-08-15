@@ -43,7 +43,7 @@
          </div>
       </div><!-- footer-top -->
 
-      <div id="footer-bottom" class="main-container">
+      <div id="footer-bottom" class="main-container-noflex">
          <div id="footer-logo-cont"></div>
          <p>
             Valdor Bt<br>1161 Budapest,<br>Szepesi u.1.<br><a href="mailto:valdor1@t-online.hu">valdor1@t-online.hu</a><br> Asz.: 20774682-2-42

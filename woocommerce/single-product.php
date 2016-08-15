@@ -27,7 +27,10 @@ get_header('shop'); ?>
 <div class="page-content">
    <div class="main-container woo-single-container">
       <?php do_action('woo_header_breadcrump') ?>
-      <section class="contentbox-section medium-9 columns woo-contentbox">
+   </div><!-- main-container woo-single-container -->
+
+   <div class="main-container woo-single-container">
+      <section class="contentbox-section content-cont woo-contentbox">
 
       	<?php
               /**
@@ -47,7 +50,7 @@ get_header('shop'); ?>
       </section><!-- contentbox-section medium-9 columns woo-contentbox -->
 
       <!-- woocommerce sidebar -->
-      <div class="medium-3 columns">
+      <div class="sidebar-cont">
          <?php dynamic_sidebar('woosidebar_widget'); ?>
       </div><!-- medium-3 columns -->
 

@@ -22,7 +22,7 @@ Template Name: nyomtatas
 <!-- main content section -->
    <div class="main-container">
 
-      <section class="contentbox-section medium-9 columns">
+      <section class="contentbox-section content-cont">
          <p>
             Canon Image Pro Graph poszternyomtató Canon fotópapírra és tintapatronokkal  dolgozik, kiváló minőségben. Itt is többféle felület és vastagság közül választhatunk a fényes papírtól a szatén felületen át a vászon hordozóig.
          </p>
@@ -46,7 +46,7 @@ Template Name: nyomtatas
          </p>
       </section>
    <!-- SIDEBAR -->
-      <aside class="sidebar-cont medium-3 columns">
+      <aside class="sidebar-cont">
          <?php dynamic_sidebar('main_widget'); ?>
       </aside>
 

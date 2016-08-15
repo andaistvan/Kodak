@@ -52,22 +52,24 @@ h3 {
 /*--------------------------------------------------------------
 # navigation
 --------------------------------------------------------------*/
-#main-nav .top-bar-left {
+#main-nav {
   width: 100%; }
-  #main-nav .top-bar-left ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; }
-    #main-nav .top-bar-left ul li a {
-      color: #F8F8F9;
-      font-size: 14px;
-      text-transform: uppercase;
-      padding: 34px 4px 10px 4px; }
-    #main-nav .top-bar-left ul li:hover {
-      border-bottom: 2px solid #FF1E04;
-      transition: all 0.2s; }
-    #main-nav .top-bar-left ul li.current-menu-item {
-      border-bottom: 2px solid #FF1E04; }
+  #main-nav .top-bar-left {
+    width: 100%; }
+    #main-nav .top-bar-left ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      #main-nav .top-bar-left ul li a {
+        color: #F8F8F9;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 34px 4px 10px 4px; }
+      #main-nav .top-bar-left ul li:hover {
+        border-bottom: 2px solid #FF1E04;
+        transition: all 0.2s; }
+      #main-nav .top-bar-left ul li.current-menu-item {
+        border-bottom: 2px solid #FF1E04; }
 
 #footer-top div ul li {
   display: block;
@@ -95,12 +97,6 @@ body {
 
 .clear {
   clear: both; }
-
-.main-container {
-  width: 94%;
-  max-width: 1115px;
-  margin: 0 auto;
-  display: table; }
 
 .off-canvas-content {
   background: #D1DBE1; }
@@ -134,10 +130,12 @@ header#masthead {
 
 footer#site-footer {
   background: #40474E;
-  min-height: 300px; }
+  min-height: 300px;
+  width: 100%; }
 
 #footer-top {
   padding: 50px 0 26px 0;
+  width: 90%;
   border-bottom: 2px solid #676767; }
   #footer-top h3 {
     padding-bottom: 21px; }
@@ -147,12 +145,21 @@ footer#site-footer {
     #footer-top p a {
       color: #FF1E04; }
 
+.footer-2col {
+  width: 50%;
+  display: flex;
+  justify-content: space-between; }
+
 .footer-col {
-  width: 25%;
+  width: 45%;
   padding: 0 30px 0 0;
   float: left; }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
+  .footer-2col {
+    width: 90%;
+    margin: 0 auto; }
+
   .footer-col {
     width: 50%;
     padding: 0 30px 0 30px; }
@@ -194,7 +201,7 @@ header.page-header {
   width: 100%;
   height: 145px;
   background: #40474E;
-  padding: 40px 0 0 0;
+  padding: 45px 0 0 0;
   z-index: 1; }
 
 .subtitle {
@@ -207,11 +214,70 @@ header.page-header {
   background-position: top;
   width: 100%; }
 
+.main-container {
+  width: 94%;
+  max-width: 1115px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.flex-col {
+  flex-direction: column; }
+
+.main-container-noflex {
+  width: 94%;
+  max-width: 1115px;
+  margin: 0 auto;
+  display: table; }
+
+.content-cont {
+  width: 73%; }
+
+.sidebar-cont {
+  width: 25%; }
+
+@media (max-width: 900px) {
+  .main-container {
+    flex-direction: column; }
+
+  .content-cont,
+  .sidebar-cont {
+    width: 100%; } }
 section.contentbox-section {
   background: #FFFFFF;
   border: 1px solid #E5E5E5;
   box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.16);
   margin: 0 0 20px 0; }
+
+header#archive-header {
+  width: 100%;
+  height: 145px;
+  background: #40474E;
+  padding: 40px 0 0 0;
+  z-index: 1; }
+
+header.entry-header {
+  width: 100%;
+  padding: 15px;
+  z-index: 1; }
+
+.entry-content {
+  padding: 15px; }
+
+article.contentbox-section {
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.16);
+  margin: 0 0 20px 0; }
+
+h2.entry-title {
+  font-size: 28px; }
+  h2.entry-title a {
+    color: black; }
+  h2.entry-title a:hover {
+    color: #FF1E04;
+    transition: all 0.2s; }
 
 /*--------------------------------------------------------------
 # widgets
@@ -235,7 +301,7 @@ section#nav_menu-6.widget.widget_nav_menu {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: bold;
-    margin: 27% 0 9px 16px;
+    margin: 70px 0 9px 16px;
     color: black; }
 
 ul#menu-araink-sidebar.menu,
@@ -269,7 +335,7 @@ ul#menu-woo-teszt.menu {
     border-bottom: none;
     margin-bottom: 10px; }
 
-@media (max-width: 640px) {
+@media (max-width: 900px) {
   .widget {
     padding: 0 40px; }
 
@@ -285,12 +351,13 @@ ul#menu-woo-teszt.menu {
   margin-top: 20px; }
 
 .woo-contentbox {
-  padding-top: 20px; }
+  padding: 20px; }
 
 .woocommerce .woocommerce-breadcrumb {
   color: white;
-  font-size: 16px;
-  font-weight: bold; }
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px; }
   .woocommerce .woocommerce-breadcrumb a {
     color: #D1DBE1;
     font-weight: normal; }

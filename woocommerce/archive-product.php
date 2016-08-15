@@ -32,7 +32,7 @@ get_header('shop'); ?>
         do_action('woocommerce_before_main_content');
     ?>
     <header class="page-header">
-       <div class="main-container">
+       <div class="main-container-noflex">
 
 		   <?php if (apply_filters('woocommerce_show_page_title', true)) : ?>
 
@@ -44,7 +44,7 @@ get_header('shop'); ?>
 
 
       <div class="main-container woo-container">
-         <section class="contentbox-section medium-9 columns woo-contentbox">
+         <section class="contentbox-section content-cont woo-contentbox">
 
       		<?php endif; ?>
 
@@ -85,7 +85,7 @@ get_header('shop'); ?>
 
 
          <!-- woocommerce sidebar -->
-         <div class="medium-3 columns">
+         <div class="sidebar-cont">
          	<?php dynamic_sidebar('woosidebar_widget'); ?>
          </div><!-- medium-3 columns -->
 

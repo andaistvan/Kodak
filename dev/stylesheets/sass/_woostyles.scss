@@ -3,15 +3,16 @@
 }
 
 .woo-contentbox{
-   padding-top: 20px;
+   padding: 20px;
 }
 
 
 // breadcrump style
 .woocommerce .woocommerce-breadcrumb{
    color: white;
-   font-size: 16px;
+   font-size: 14px;
    font-weight: bold;
+   margin-top: 10px;
    a{
       color: $mainbg;
       font-weight: normal;

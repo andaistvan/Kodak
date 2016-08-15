@@ -10,7 +10,6 @@
 	<header class="page-header">
       <div class="main-container flex-col">
        <h1 class="page-title"><?php the_title() ?></h1>
-       <h2 class="subtitle">Poszterek, vászon képek, plakátok</h2>
       </div><!-- main-container -->
    </header><!-- .page-header -->
 </section><!-- .no-results -->
